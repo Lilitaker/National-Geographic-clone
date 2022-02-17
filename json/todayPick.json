@@ -1,0 +1,37 @@
+[
+    {
+        "image": "/img/",
+        "category": "Animals",
+        "subCategory": "Monster Fish",
+        "text": "A new discovery could help save North Ameria's biggest freshwater fish"
+    },
+
+    {
+        "image": "/img/",
+        "category": "Animals",
+        "subCategory": "Wildlife Watch",
+        "text": "Namibia's wild elephants are being captured for international sales"
+    },
+
+    {
+        "image": "/img/",
+        "category": "Nat Geo News Quiz",
+        "subCategory": "",
+        "text": "This week: Black diamond origins, snurfing,plus more"
+    },
+
+    {
+        "image": "/img/",
+        "category": "Animals",
+        "subCategory": "",
+        "text": "Most U.S. wolves listed as endangered-again. Here's why."
+    },
+
+    {
+        "image": "/img/",
+        "category": "Travel",
+        "subCategory": "",
+        "text": "What is 'Gothic'? It's more complicated than you think."
+    }
+
+]

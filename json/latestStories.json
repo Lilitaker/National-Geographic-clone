@@ -1,0 +1,29 @@
+[
+    {
+        "image": "https://i.natgeofe.com/n/0d2d5e41-9a42-4086-845f-de7b71c4aaf8/GettyImages-1338773814_4x3.jpg?w=1272&h=954",
+        "category": "Science",
+        "topic": "Coronavirus Coverage",
+        "text": "'Flurona' explained, from case rates to disease severity",
+        "icon": "/img/",
+        "linkText": "Read"
+    },
+
+    {
+        "image": "https://i.natgeofe.com/n/b864148a-9caf-42b4-b14d-fdb14d2fb9fc/STOCK_MM8995_Panther_Rosettes_in_Low_Light_4x3.jpg?w=1272&h=954",
+        "category": "Magazine",
+        "topic": "",
+        "text": "In this dense Indian forest, tigers and leopards are thriving",
+        "icon": "/img/",
+        "linkText": "Read"
+    },
+
+    {
+        "image": "https://i.natgeofe.com/n/5031479b-638b-4433-8c03-bd32be034fe1/264BE814-155D-451F-675B97FCA5DD46DFOriginal_4x3.jpg?w=1272&h=954",
+        "category": "Environment",
+        "topic": "Planet Possible",
+        "text": "A disappearing desert ecosystem can now be saved in a lab",
+        "icon": "/img/",
+        "linkText": "Read"
+    }
+
+]
