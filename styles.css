@@ -13,6 +13,7 @@
 
 body {
     width: 100%;
+    overflow-x: hidden;
     background-color: var(--secondary-color);
 }
 
@@ -33,6 +34,10 @@ header .web-logo {
     margin: .5em 1.2em;
 }
 
+header .web-logo-desktop {
+    display: none;
+}
+
 header nav ul {
     display: flex;
     list-style: none;
@@ -51,6 +56,14 @@ header nav ul li .button-login, .link-subscribe {
     text-transform: uppercase;
 }
 
+header nav ul li.search-tool {
+    display: none;
+}
+
+header nav ul li.renew-link {
+    display: none;
+}
+
 header nav ul li .link-subscribe {
     width: 9em;
     padding-top: 1.1em;
@@ -58,6 +71,7 @@ header nav ul li .link-subscribe {
     color: var(--main-color);
     letter-spacing: 2px;
     text-align: center;
+    text-decoration: none;
 }
 
 header nav ul li .button-icon {
@@ -65,6 +79,10 @@ header nav ul li .button-icon {
     padding-top: 1.4em;
     border: none;
     background-color: var(--main-color);
+}
+
+header nav ul li .button-icon-desktop {
+    display: none;
 }
 
 header nav ul li .button-icon img {
@@ -156,10 +174,11 @@ main .stories_container_top .article_container_top .article-header .article-head
     font-weight: 500;
 }
 
-main .stories_container_top .article_container_top .article-title {
+main .stories_container_top .article_container_top .article-title a {
     padding-bottom: 1em;
     font-size: 1.7rem;
     color: var(--main-color);
+    text-decoration: none;
 }
 
 main .stories_container_top .article_container_top .article-icon {
@@ -235,16 +254,34 @@ main .picks-section .pickSection-article .pickSection-article-text .pickSection-
     text-transform: uppercase;
 }
 
-main .picks-section .pickSection-article .pickSection-article-text .pickSection-article-text__category {
+main .picks-section .pickSection-article .pickSection-article-text .pickSection-article-text__category a {
     padding-right: 1em;
+    color: var(--main-color);
+    text-decoration: none;
 }
 
-main .picks-section .pickSection-article .pickSection-article-text .pickSection-article-text__topic {
+main .picks-section .pickSection-article .pickSection-article-text .pickSection-article-text__category a:hover {
+    text-decoration: underline;
+}
+
+main .picks-section .pickSection-article .pickSection-article-text .pickSection-article-text__topic a {
     font-weight: 500;
+    color: var(--main-color);
+    text-decoration: none;
 }
 
-main .picks-section .pickSection-article .pickSection-article-text__title {
+main .picks-section .pickSection-article .pickSection-article-text .pickSection-article-text__topic a:hover {
+    text-decoration: underline;
+}
+
+main .picks-section .pickSection-article .pickSection-article-text__title a {
     font-size: 1rem;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+main .picks-section .pickSection-article .pickSection-article-text__title a:hover {
+    text-decoration: underline;
 }
 
 main a.see-more-picks {
@@ -318,4 +355,240 @@ footer .footer-section-social {
 
 footer .footer-section-social img {
     width: 1.5em;
+}
+
+
+
+/* ==========================================
+================ BREAKPOINTS ================
+============================================ */
+
+/* DESKTOP */
+
+@media only screen and (min-width: 1200px){
+
+    /* ==========================================
+    ================ HEADER =====================
+    ============================================ */
+
+    header {
+        height: 50px;
+    }
+    
+    header .web-logo {
+        display: none;
+    }
+
+    header .web-logo-desktop {
+        display: inline-block;
+        height: 32px;
+        margin: .5em 1.2em;
+    }
+    
+    header nav ul li .button-login, .link-subscribe {
+        height: 3.8em;
+        cursor: pointer;
+        font-size: .8rem;
+    }
+    
+    header nav ul li .link-subscribe {
+        padding-top: 1.3em;
+    }
+    
+    header nav ul li.button-icon-dt-flex {
+        display: flex;
+        cursor: pointer;
+    }
+    
+    header nav ul li .button-icon {
+        display: none;
+    }
+
+    header nav ul li .button-icon-desktop {
+        display: block;
+        width: 4em;
+        margin: 0 .8em;
+        border: none;
+        background-color: var(--main-color);
+        cursor: pointer;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    header nav ul li.button-icon-dt-flex img {
+        width: .6em;
+        margin-right: 1em;
+    }
+
+    header nav ul li .button-login:hover, .button-icon-desktop:hover {
+        color: #828282;
+        transition-duration: 2s;
+    }
+
+    header nav ul li .link-subscribe:hover {
+       color: var(--secondary-color);
+       background-color: var(--third-color);
+       transition: all .2s ease-in-out; 
+    }
+
+    header nav ul li.search-tool {
+        display: block;
+        width: 3em;
+    }
+
+    header nav ul li.search-tool img {
+        width: 1.2em;
+        margin: 1em 1em 0;
+    }
+
+    header nav ul li.renew-link {
+        display: block;
+        padding: .9em 1em 0 .5em;
+    }
+
+    header nav ul li.renew-link a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        border-bottom: 2px solid var(--third-color);
+    }
+
+    header nav ul li.renew-link a:visited {
+        color: var(--secondary-color);
+    }
+
+
+    /* ==========================================
+    ================== MAIN =====================
+    ============================================ */
+
+    main {
+        width: 55%;
+        padding: 0;
+        margin: 4em auto 0;
+    }
+
+    main .latestStories-title {
+        font-size: 3.4rem;
+    }
+
+    main .dividing-line-top {
+        width: 6%;
+        height: 4px;
+    }
+
+    main .container-top-desktop {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    main .container-top-desktop .container-top-desktop__right {
+       width: 65%;
+    }
+
+    main .container-top-desktop .container-top-desktop__left {
+        width: 35%;
+        padding-right: .8em;
+        margin-right: 1em;
+    }
+
+    main .container-top-desktop .container-top-desktop__section-right-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main .container-top-desktop .container-top-desktop__section-right-bottom .article_container_top {
+        width: 49%;
+    }
+
+    main .stories_container_top .article_container_top_1 .article-block {
+        padding-left: 19em 0 1em 1.5em;
+    }
+
+    main .stories_container_top .article_container_top_2 .article-block {
+        padding-left: 1em;
+    }
+
+    main .container-top-desktop__section-right-bottom .article_container_top_2 .article-block .article-title a {
+        display: block;
+        font-size: 1.2rem;
+        padding-bottom: 1em;
+    }
+    
+    main .container-top-desktop .container-top-desktop__right .article-header {
+        font-size: .8rem;
+    }
+    
+    main .container-top-desktop .container-top-desktop__right .article_container_top .article-title {
+        font-size: 1.3rem;
+    }
+
+    main .container-top-desktop .container-top-desktop__right .article_container_top_1 .article-title {
+        font-size: 2.3rem;
+        font-weight: 600;
+        padding: 0 .7em .4em 0;
+    }
+
+    main .container-top-desktop .container-top-desktop__right .stories_container_top .article-icon {
+        width: .8em;
+    }
+
+    main .container-top-desktop .container-top-desktop__right .stories_container_top .article-link {
+        font-size: .8rem
+    }
+
+    /* Today's Pick */
+
+    main .container-top-desktop .container-top-desktop__left .picks-title {
+        font-size: 2rem;
+    }
+
+    main .container-top-desktop__left .picks-section .pickSection-article img {
+        height: 6em;
+    }
+
+    
+     /* ==========================================
+    ================== MAIN =====================
+    ============================================ */
+    
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer .footer-logo {
+        display: none;
+    }
+
+    footer .footer-section {
+        padding-right: 0;
+    }
+
+    footer .footer-section-column {
+        padding-right: 2em;
+    }
+
+    footer .footer-section .footer-section-column  .footer-section-title {
+        font-size: .8em;
+    }
+
+    footer .footer-section .footer-section-column ul li a {
+        font-size: 1em;
+    }
+
+    footer .footer-section .footer-section-column ul li a:hover {
+        text-decoration: underline;
+    }
+
+    footer .footer-section-social {
+        margin-right: 0;
+    }
+
+    footer .footer-section-social ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
 }

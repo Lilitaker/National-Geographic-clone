@@ -34,10 +34,10 @@ function dayPicks() {
             <img src="${article[0]}"/>
             <div>
                 <div class="pickSection-article-text">
-                    <h4 class="pickSection-article-text__category">${article[1]}</h4>
-                    <h4 class="pickSection-article-text__topic">${article[2]}</h4>
+                    <h4 class="pickSection-article-text__category"><a href="#">${article[1]}</a></h4>
+                    <h4 class="pickSection-article-text__topic"><a href=#>${article[2]}</a></h4>
                 </div>
-                <h3 class="pickSection-article-text__title">${article[3]}</h3>
+                <h3 class="pickSection-article-text__title"><a href=#>${article[3]}</a></h3>
             </div>
         </article>
       `
